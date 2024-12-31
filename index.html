@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="userbox">
+            <h1 id="top-heading" class="heading">Generate a<br><span id="heading-green" class="heading">random password</span></h1>
+            <h2 id="subheading">Never use an insecure password again.</h2>
+            <input max="20" min="8" type="number" id="length" class="number-input" placeholder="Input character length">
+            <button onclick="clickedGenPW()" id="gen-btn">Generate passwords</button>
+            <div class="line"></div>
+            <div class="passwords">
+                <button onclick="copyToClipboard1()" id="field1" class="field-box"></button>
+                <button onclick="copyToClipboard2()" id="field2" class="field-box"></button>
+            </div>
+            <h4 id="subtext"></h4>
+
+            <h2 id="number-text">Remove Numbers</h2>
+            <label id="number-checkbox" class="switch-1">
+                <input type="checkbox" id="numberCheckbox"/>
+                <span class="slider"></span>
+            </label>
+
+            <h2 id="symbol-text">Remove Symbols</h2>
+            <label id="symbol-checkbox" class="switch-1">
+                <input type="checkbox" id="symbolCheckbox"/>
+                <span class="slider"></span>
+            </label>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
